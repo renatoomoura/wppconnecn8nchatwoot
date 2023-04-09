@@ -52,7 +52,7 @@ https://github.com/EngajamentoFlow/chatwoot
 ✅  Docker
 </p>
 
-*Manual Instalação N8N*
+**Manual Instalação N8N**
 
 </p>
 🧰 Instruções:
@@ -64,7 +64,7 @@ https://github.com/EngajamentoFlow/chatwoot
 https://github.com/EngajamentoFlow/n8n
 </p>
 
-*Manual Instalação WPPCCONNECT*
+**Manual Instalação WPPCCONNECT**
 
 </p>
 https://github.com/EngajamentoFlow/wppconnect
@@ -76,97 +76,6 @@ https://github.com/EngajamentoFlow/wppconnect
 ✅  Docker
 </p>
 
-
-----------------------------------------------------------------------------
-
-**Pronto tudo Funcionando**
-
-----------------------------------------------------------------------------
-----------------------------------------------------------------------------
-
-**Versão Docker**
-
-**Manual de Instalação ChatWoot via Docker**
-
-----------------------------------------------------------------------------
-
-</p>
-sudo apt update && apt upgrade -y
-</p>
-git clone https://github.com/wppconnect-team/wppconnect-server
-</p>
-cd wppconnect-server
-</p>
-nano wppconnect-server/src/config.json
-</p>
-secretKeyost
-</p>
-nano wppconnect-server/src/swagger.json
-</p>
-Alterar URL
-</p>
-"url": "http://site/api/{session}",
-</p>
-docker-compose up -d --build
-</p>
-
-----------------------------------------------------------------------------
-
-**Ativando SSL WPPConnect**
-
-</p>
-sudo apt install nginx
-</p>
-sudo rm /etc/nginx/sites-enabled/default
-</p>
-sudo nano /etc/nginx/sites-available/wppconnect
-</p>
-
-```
-server {
-
-  server_name wppconnect.dominio.com.br;
-
-  location / {
-
-    proxy_pass http://127.0.0.1:21465;
-
-    proxy_http_version 1.1;
-
-    proxy_set_header Upgrade $http_upgrade;
-
-    proxy_set_header Connection 'upgrade';
-
-    proxy_set_header Host $host;
-
-    proxy_set_header X-Real-IP $remote_addr;
-
-    proxy_set_header X-Forwarded-Proto $scheme;
-
-    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-
-    proxy_cache_bypass $http_upgrade;
-
-  }
-
-   }
-```
-
-</p>
-sudo ln -s /etc/nginx/sites-available/wppconnect /etc/nginx/sites-enabled
-</p>
-sudo apt-get install snapd
-</p>
-sudo snap install notes
-</p>
-sudo snap install --classic certbot
-</p>
-sudo certbot --nginx
-</p>
-sudo service nginx restart
-   </p>
-</p>
-http://site/api-docs
 
 ----------------------------------------------------------------------------
 
