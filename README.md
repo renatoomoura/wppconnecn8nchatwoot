@@ -33,106 +33,48 @@
 ```
 ----------------------------------------------------------------------------
 
-**Manual de Instalação WPPConnect**
-
-</p>
-sudo apt update && apt upgrade -y
-</p>
-curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-</p>
-sudo apt-get install -y nodejs
-</p>
-node -v
-</p>
-sudo apt install npm
-</p>
-npm install pm2 -g
-</p>
-npm install -g npm@8.18.0
-</p>
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-</p>
-sudo apt install ./google-chrome-stable_current_amd64.deb
-</p>
-apt install git
-</p>
-git clone https://github.com/wppconnect-team/wppconnect-server
-</p>
-nano wppconnect-server/src/config.json
-</p>
-secretKeyost
-</p>
-nano wppconnect-server/src/swagger.json
-</p>
-Alterar URL
-</p>
-"url": "http://site/api/{session}",
-</p>
-cd /root/wppconnect-server
-</p>
-npm install --force
-</p>
-npm run build
 </p>
 
-----------------------------------------------------------------------------
-
-**Ativando SSL WPPConnect**
+**Imaginamos aqui que você ja passou 3 manuais anteriores**
 
 </p>
-sudo apt install nginx
-</p>
-sudo rm /etc/nginx/sites-enabled/default
-</p>
-sudo nano /etc/nginx/sites-available/wppconnect
-</p>
 
-```
-server {
-
-  server_name wppconnect.dominio.com.br;
-
-  location / {
-
-    proxy_pass http://127.0.0.1:21465;
-
-    proxy_http_version 1.1;
-
-    proxy_set_header Upgrade $http_upgrade;
-
-    proxy_set_header Connection 'upgrade';
-
-    proxy_set_header Host $host;
-
-    proxy_set_header X-Real-IP $remote_addr;
-
-    proxy_set_header X-Forwarded-Proto $scheme;
-
-    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-
-    proxy_cache_bypass $http_upgrade;
-
-  }
-
-   }
-```
+**Manual Instalação CHATWOOT**
 
 </p>
-sudo ln -s /etc/nginx/sites-available/wppconnect /etc/nginx/sites-enabled
+
+https://github.com/EngajamentoFlow/chatwoot
 </p>
-sudo apt-get install snapd
+🧰 Instruções:
 </p>
-sudo snap install notes
+✅  Linux VM
 </p>
-sudo snap install --classic certbot
+✅  Docker
 </p>
-sudo certbot --nginx
+
+*Manual Instalação N8N*
+
 </p>
-sudo service nginx restart
-   </p>
-pm2 start npm --cron-restart="0 0 * * *" -- start
+🧰 Instruções:
 </p>
-http://site/api-docs
+✅  Linux VM
+</p>
+✅  Docker
+</p>
+https://github.com/EngajamentoFlow/n8n
+</p>
+
+*Manual Instalação WPPCCONNECT*
+
+</p>
+https://github.com/EngajamentoFlow/wppconnect
+</p>
+🧰 Instruções:
+</p>
+✅  Linux VM
+</p>
+✅  Docker
+</p>
 
 
 ----------------------------------------------------------------------------
