@@ -78,7 +78,48 @@ https://github.com/EngajamentoFlow/wppconnect
 
 ----------------------------------------------------------------------------
 
+**Suba dois Worflows disponivel nesse GITHUB em seu N8N**
 
+</p>
+**N0 Worflow WPPConnectQrcode**
+</p>
+Localize NO Colocando Dados
+</p>
+Adicione as seguintes Informações:
+</p>
+</p>
+URL Chatwoot
+</p>
+URL WPPConnect
+</p>
+KEY WPPConnect
+</p>
+**N0 Worflow WPPConnectQrcode Informa UToken**
+</p>
+Coloque suas credenciais NOS PostgreSQL, elas estarão em seu .env na pasta /home/chatwoot/chatwoot
+</p>
+
+**Agora ative dois Worflows**
+
+</p>
+WPPAutomatic
+</p>
+WPPConnectQrcode
+</p>
+
+----------------------------------------------------------------------------
+
+**Criando sua Caixa de Entrada**
+
+</p>
+Envia uma mensagem para Contato Criado
+</p>
+WPPConnect Control
+</p>
+/qrcode
+</p>
+Leia QRCODE
+</p>
 
 ----------------------------------------------------------------------------
 
