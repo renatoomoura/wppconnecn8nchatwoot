@@ -1,6 +1,6 @@
 # WPPConnect 📞
 
-![WPPConnect Banner](./wppconnect-banner.jpeg)
+[![WPPConnect Banner](./wppconnect-banner.jpeg)](https://github.com/EngajamentoFlow/wppconnect/blob/main/wppconnect-banner.jpeg)
 
 > WPPConnect é um projeto de código aberto desenvolvido pela comunidade JavaScript com o objetivo de exportar funções do WhatsApp Web para o nó, que pode ser usado para dar suporte à criação de qualquer interação, como atendimento ao cliente, envio de mídia, reconhecimento de inteligência baseado em frases artificiais e muitas outras coisas, use sua imaginação... 😀🤔💭
 
