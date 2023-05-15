@@ -42,24 +42,17 @@
 **Manual Instalação CHATWOOT**
 
 </p>
-
-https://github.com/EngajamentoFlow/chatwoot
-</p>
 🧰 Instruções:
 </p>
-✅  Linux VM
+https://github.com/EngajamentoFlow/chatwoot
 </p>
-✅  Docker
-</p>
+
+
 
 **Manual Instalação N8N**
 
 </p>
 🧰 Instruções:
-</p>
-✅  Linux VM
-</p>
-✅  Docker
 </p>
 https://github.com/EngajamentoFlow/n8n
 </p>
@@ -67,21 +60,25 @@ https://github.com/EngajamentoFlow/n8n
 **Manual Instalação WPPCCONNECT**
 
 </p>
+🧰 Instruções:
+
+</p>
 https://github.com/EngajamentoFlow/wppconnect
 </p>
-🧰 Instruções:
-</p>
-✅  Linux VM
-</p>
-✅  Docker
-</p>
+
+
+
 
 ----------------------------------------------------------------------------
 
 **Suba dois Worflows disponivel nesse GITHUB em seu N8N**
+
 </p>
+
 **Localize opção Credenciais**
+
 </p>
+
 Coloque suas credenciais NOS PostgreSQL, elas estarão em seu .env na pasta /home/chatwoot/chatwoot
 </p>
 
